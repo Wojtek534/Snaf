@@ -1,0 +1,29 @@
+.router-link {
+    display: inherit;
+    align-items: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.drawer-item {
+  cursor: pointer;
+}
+.drawer-item:hover {
+  background-color: $color-white;
+}
+.drawer-item:hover .router-link {
+  color: $color-drawer;
+}
+
+.navigation-drawer>.list .list__tile {
+    margin: 15px
+}
+
+.toolbar__content .btn:last-child {
+    margin-right: 50px;
+}
+
+.application .theme--light.navigation-drawer,
+.theme--light .navigation-drawer {
+    background-color: $color-drawer;
+}

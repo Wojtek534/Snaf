@@ -1,0 +1,15 @@
+$color-primary: #6494ED;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+$color-background: #d3d9eb;
+//
+$color-toolbar: #446CB3;
+$color-drawer: lighten($color-toolbar,7%);
+$color-background: lighten($color-toolbar,20%);
+//
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
