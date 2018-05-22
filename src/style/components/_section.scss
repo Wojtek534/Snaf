@@ -1,17 +1,4 @@
 .section {
-  border: 1px solid #ccc;
-  display: block;
-  text-align: center;
-  position: relative;
-  min-height: 250px;
-}
-.section-title {
-  background-color: #ccc;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-}
-.section-content {
-  font-size: 14px;
-  font-weight: 500;
+  background-color: $color-grey-light;
+  padding: 25rem 0 50rem 0;
 }

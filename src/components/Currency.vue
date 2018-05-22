@@ -1,14 +1,19 @@
 <template>
-  <div class="container">
-      <currency-table :dataCurrency='data'/>
-  </div>
+  <section class="section-currency">
+    <feature-box/>
+    <flipper-card/>
+      <!--<currency-table :dataCurrency='data'/>-->
+  </section>
 </template>
 <script>
 import CurrencyTable from '../components/content/CurrencyTable'
-
+import FlipperCard from '../components/content/FlipperCard'
+import FeatureBox from '../components/content/FeatureBox'
 export default {
   components: {
-    CurrencyTable
+    CurrencyTable,
+    FlipperCard,
+    FeatureBox
   },
   computed: {
     data () {
