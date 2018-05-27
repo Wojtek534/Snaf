@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__logo-box">
-      <img src="../assets/logo.png" alt="logo" class="header__logo"/>
+      <img src="../../assets/logo.png" alt="logo" class="header__logo"/>
     </div>
     <div class="header__text-box">
       <h1 class="heading-primary">
@@ -13,8 +13,5 @@
   </div>
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
-

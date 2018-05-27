@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 // home
-import HomePage from '@/components/HomePage'
-import NotFound from '@/components/common/NotFound'
+import HomePage from '@/components/HomePage';
+import NotFound from '@/components/common/NotFound';
 
-Vue.use(Router)
+Vue.use(Router);
 
 let router = new Router({
   routes: [
@@ -14,17 +14,19 @@ let router = new Router({
       meta: {
         requiresAuth: false
       }
-    }, {
+    },
+    {
       path: '/notFound',
       component: NotFound
-    }, {
+    },
+    {
       path: '/*',
       redirect: '/notFound'
     }
   ]
-})
+});
 router.beforeEach((to, from, next) => {
-  next()
-})
+  next();
+});
 
-export default router
+export default router;

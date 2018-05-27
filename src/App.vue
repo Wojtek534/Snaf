@@ -1,28 +1,30 @@
 <template>
-  <v-app>
+<v-app>
+  <main>
+    <Navigation/>
     <v-content>
-      <div class="body">
-        <Navigation/>
-          <router-view/>
-        <Footer/>
-      </div>
+      <router-view/>
     </v-content>
-  </v-app>
+  </main>
+  <Footer/>
+</v-app>
 </template>
 
 <script>
-import Navigation from './components/common/Navigation'
-import Footer from './components/common/Footer'
+import Navigation from './components/common/Navigation';
+import Footer from './components/common/Footer';
 
 export default {
+  name: 'App',
   components: {
     Navigation,
     Footer
   },
-  name: 'App'
-}
+  created() {
+    this.$store.commit('setDrawerStorage');
+  }
+};
 </script>
 <style lang="scss">
-  @import './style/main.scss';
+@import './style/main.scss';
 </style>
-

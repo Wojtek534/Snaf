@@ -1,9 +1,9 @@
 .router-link {
-    display: inherit;
-    align-items: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
+  display: inherit;
+  align-items: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
 }
 .drawer-item {
   cursor: pointer;
@@ -17,14 +17,14 @@
 }
 .navigation-drawer--mini-variant .drawer-item {
   margin: 0px;
-  padding: 5px 0px;
+  padding: 0.5rem 0px;
 }
 
 .toolbar__content .btn:last-child {
-    margin-right: 50px;
+  margin-right: 5rem;
 }
-
-.application .theme--light.navigation-drawer,
-.theme--light .navigation-drawer {
-    background-color: $color-drawer;
+.application .theme--light .navigation-drawer,
+.theme--light .navigation-drawer,
+.navigation-drawer {
+  background-color: $color-drawer;
 }

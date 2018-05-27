@@ -24,33 +24,44 @@
   </div>
 </template>
 <script>
-import Drawer from './SideDrawer'
-import { mapGetters, mapMutations } from 'vuex'
+import Drawer from './SideDrawer';
+import { mapGetters, mapMutations } from 'vuex';
 export default {
-  data () {
+  data() {
     return {
       title: 'Snaf'
-    }
+    };
   },
   components: {
     Drawer
   },
   methods: {
-    ...mapMutations(['setNavClipped', 'setDrawer', 'setFixed', 'setMiniVariant'])
+    ...mapMutations([
+      'setNavClipped',
+      'setDrawer',
+      'setFixed',
+      'setMiniVariant'
+    ])
   },
   computed: {
-    ...mapGetters(['getNavClipped', 'getDrawer', 'getFixed', 'getMiniVariant', 'getNavRight']),
+    ...mapGetters([
+      'getNavClipped',
+      'getDrawer',
+      'getFixed',
+      'getMiniVariant',
+      'getNavRight'
+    ]),
     drawerModel: {
-      get () {
-        return this.getNavDrawer
+      get() {
+        return this.getNavDrawer;
       },
-      set () {
-        return this.getNavDrawer
+      set() {
+        return this.getNavDrawer;
       }
     },
-    isUserLogged () {
-      return this.$store.getters.isUserLogged
+    isUserLogged() {
+      return this.$store.getters.isUserLogged;
     }
   }
-}
+};
 </script>

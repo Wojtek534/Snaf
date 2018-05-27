@@ -1,15 +1,15 @@
 // Primary
-$color-primary: #6494ED;
-$color-primary-light: lighten($color-primary,15%);
-$color-primary-dark: darken($color-primary,15%);
+$color-primary: #6494ed;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 15%);
 // Secondary
-$color-secondary: #ffb900;
-$color-secondary-light: lighten($color-secondary,15%);
-$color-secondary-dark: darken($color-secondary,15%);
+$color-secondary: #ccc;
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%);
 // Tertiary
 $color-tertiary: #2998ff;
-$color-tertiary-light: lighten($color-tertiary,15%);
-$color-tertiary-dark: darken($color-tertiary,15%);
+$color-tertiary-light: lighten($color-tertiary, 15%);
+$color-tertiary-dark: darken($color-tertiary, 15%);
 //
 $color-grey: #777;
 $color-grey-dark: #6c6c6c;
@@ -19,9 +19,9 @@ $color-white: #fff;
 $color-black: #000;
 $color-background: #d3d9eb;
 //
-$color-toolbar: #446CB3;
-$color-drawer: lighten($color-toolbar,7%);
-$color-background: lighten($color-toolbar,20%);
+$color-toolbar: #446cb3;
+$color-drawer: lighten($color-toolbar, 7%);
+$color-background: lighten($color-toolbar, 20%);
 // Font
 $font-size: 1.6rem;
 // Grid

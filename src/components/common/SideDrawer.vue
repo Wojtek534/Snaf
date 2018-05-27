@@ -15,9 +15,9 @@
   </v-navigation-drawer>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
 export default {
-  data () {
+  data() {
     return {
       navItems: [
         {
@@ -36,18 +36,18 @@ export default {
           link: '/'
         }
       ]
-    }
+    };
   },
   computed: {
     ...mapGetters(['getNavClipped', 'getDrawer', 'getFixed', 'getMiniVariant']),
     DrawerModel: {
-      get () {
-        return this.getDrawer
+      get() {
+        return this.getDrawer;
       },
-      set () {
-        return this.getDrawer
+      set() {
+        return this.getDrawer;
       }
     }
   }
-}
+};
 </script>
