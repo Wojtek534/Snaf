@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="grey darken-3" >
+  <v-footer class="grey darken-3" :absolute="true">
     <v-layout row wrap justify-center white--text>
       <span>&copy; {{currentYear}} Wojciech Rzepka</span>
     </v-layout>

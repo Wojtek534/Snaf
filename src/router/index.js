@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // home
-import HomePage from '@/components/HomePage';
+import DashboardPage from '@/components/DashboardPage';
+import CurrencyPage from '@/components/CurrencyPage';
+import PopulationPage from '@/components/PopulationPage';
 import NotFound from '@/components/common/NotFound';
 
 Vue.use(Router);
@@ -10,7 +12,21 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      component: HomePage,
+      component: DashboardPage,
+      meta: {
+        requiresAuth: false
+      }
+    },
+    {
+      path: '/currency',
+      component: CurrencyPage,
+      meta: {
+        requiresAuth: false
+      }
+    },
+    {
+      path: '/population',
+      component: PopulationPage,
       meta: {
         requiresAuth: false
       }

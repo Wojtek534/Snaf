@@ -30,5 +30,9 @@ body {
   }
 }
 main {
-  background-image: linear-gradient(top, $color-secondary-light, #fff);
+  background-image: linear-gradient(to top left, #fff, #d7d7d7);
+}
+.theme--light .icon,
+.application .theme--light.icon {
+  color: inherit;
 }

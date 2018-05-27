@@ -19,7 +19,6 @@
 <script>
 import _ from 'lodash';
 import CurrencyTable from '../components/content/CurrencyTable';
-import CurrencyTab from '../components/content/CurrencyTab';
 import FeatureBox from '../components/content/FeatureBox';
 export default {
   data() {
@@ -51,8 +50,7 @@ export default {
   },
   components: {
     CurrencyTable,
-    FeatureBox,
-    CurrencyTab
+    FeatureBox
   },
   computed: {
     restData() {

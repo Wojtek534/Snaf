@@ -10,8 +10,10 @@ import { store } from './store/store';
 import './custom/directives';
 Vue.config.productionTip = false;
 Vue.use(Vuetify, {
-  primary: '#000',
-  secondary: '#ccc'
+  theme: {
+    primary: '#3C588E',
+    secondary: '#ccc'
+  }
 });
 var app = new Vue({
   router,

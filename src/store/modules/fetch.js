@@ -5,6 +5,7 @@ import _ from 'lodash';
 export default {
   state: {
     currency: '',
+    population: '',
     rates: [
       {
         name: 'euro',
@@ -64,6 +65,9 @@ export default {
         case 5:
           state.rates[4].value = data[0].mid;
       }
+    },
+    setPopulation(state, data) {
+      state.population = data;
     }
   },
   actions: {
@@ -83,7 +87,12 @@ export default {
                 sortable: true
               },
               { text: 'Kod', value: 'code', align: 'left', sortable: false },
-              { text: 'Kurs', value: 'rate', align: 'left', sortable: false }
+              {
+                text: 'Kurs [PLN]',
+                value: 'rate',
+                align: 'left',
+                sortable: false
+              }
             ],
             pagination: {
               sortBy: 'Currency',
@@ -101,6 +110,15 @@ export default {
         .catch(error => {
           console.log(error);
         });
+    },
+    fetchPopulation(context, config) {
+      const url = api.worldBank();
+      axios.get(url).then(response => {
+        let obj = _.map(response)[0];
+        obj = obj[1];
+        console.log(obj);
+        context.commit('setPopulation', obj[1]);
+      });
     }
   }
 };

@@ -1,30 +1,13 @@
-.router-link {
-  display: inherit;
-  align-items: inherit;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #fff;
+.navigation-drawer > .list:not(.list--dense) .list__tile {
+  color: $color-white !important;
 }
-.drawer-item {
-  cursor: pointer;
-  padding: 15px;
-}
-.drawer-item:hover {
-  background-color: $color-white;
-}
-.drawer-item:hover .router-link {
-  color: $color-drawer;
-}
-.navigation-drawer--mini-variant .drawer-item {
-  margin: 0px;
-  padding: 0.5rem 0px;
-}
-
-.toolbar__content .btn:last-child {
-  margin-right: 5rem;
-}
-.application .theme--light .navigation-drawer,
 .theme--light .navigation-drawer,
-.navigation-drawer {
-  background-color: $color-drawer;
+.application .theme--light.navigation-drawer {
+  background-color: $color-drawer !important;
+}
+.navigation-drawer > .list:not(.list--dense) .list__tile:hover {
+  color: $color-black;
+}
+.navigation-drawer .list__tile:active {
+  background-color: $color-primary !important;
 }

@@ -1,33 +1,7 @@
-.my-table {
-  width: 100%;
-  max-width: 100%;
-  border-bottom: 1rem;
-  border-collapse: collapse;
-  text-align: left;
-  &__header {
-    th {
-      padding: 1rem 0;
-      vertical-align: bottom;
-      border-bottom: 0.2rem solid $color-grey;
-    }
-  }
-  &__body {
-    padding: 5rem;
-    color: $color-grey;
-    border: none;
-    tr {
-      &:hover {
-        background-color: #f9f9f9;
-      }
-    }
-    td {
-      font-size: 1.6rem;
-      padding: 0.75rem;
-      margin: 0px;
-      border: none;
-      border-top: 1px solid $color-grey-light;
-    }
-  }
-  &__footer {
-  }
+.theme--light .table,
+.application .theme--light.table {
+  background-color: rgba($color: #fff, $alpha: 0.4);
+}
+table tbody tr td::first-letter {
+  text-transform: uppercase;
 }
