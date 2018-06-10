@@ -114,7 +114,8 @@ export default {
     fetchPopulation(context, config) {
       const url = api.worldBank();
       axios.get(url).then(response => {
-        let obj = _.map(response)[0];
+        let json = '';
+        let obj = _.map(json)[0];
         obj = obj[1];
         console.log(obj);
         context.commit('setPopulation', obj[1]);

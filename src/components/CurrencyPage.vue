@@ -1,19 +1,17 @@
 <template>
   <section class="section section--first">
-    <v-flex xs8 offset-xs2>
-     <v-container fluid grid-list-xl text-xs-center>
+    <v-container xs10 offset-xs1>
       <v-layout row justify-space-between>
         <v-flex xs3 v-for="(item, index) in featureObj" :key="index">
-          <feature-box :boxTitle='item.boxTitle' :boxIcon ='item.boxIcon' :boxContent ='getRates[index].value'/>
+            <feature-box :boxTitle='item.boxTitle' :boxIcon ='item.boxIcon' :boxContent ='Math.round(getRates[index].value * 10000)/10000'/>
         </v-flex>
       </v-layout>
-    <v-layout row wrap>
+            <v-layout>
       <v-flex>
         <currency-table :dataCurrency='restData'/>
-        </v-flex>
-    </v-layout>
-     </v-container>
-     </v-flex>
+      </v-flex >
+            </v-layout>
+      </v-container>
   </section>
 </template>
 <script>

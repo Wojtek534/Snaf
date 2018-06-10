@@ -10,9 +10,12 @@
     $color: #fff,
     $alpha: 0.8
   ); //background-image: linear-gradient(to top left, #fff, #efefef);
+  margin: 3rem;
+  /*
   &:not(:last-child) {
     margin: 0.5rem;
   }
+  */
   @include respond(tab-port) {
     padding: 2rem;
   }
@@ -50,4 +53,7 @@
   &:hover {
     transform: translateY(-1rem) scale(1.03);
   }
+}
+.my-flex {
+  flex-direction: row;
 }
